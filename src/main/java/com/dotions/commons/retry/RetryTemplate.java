@@ -24,7 +24,7 @@ public class RetryTemplate {
      * <p>Default retry times limit is 1000.</p>
      * @param action The action which be retry
      * */
-    public void retry(RetryAction action) {
+    public void retry(Action action) {
         retry(action, DEFAULT_RETRY_TIMES);
     }
     
@@ -36,7 +36,7 @@ public class RetryTemplate {
      * @param action The action which be retry
      * @param retryTimes Retry times limit
      * */
-    public void retry(RetryAction action, int retryTimes) {
+    public void retry(Action action, int retryTimes) {
         int times = 1;
         int sleep = 0;
         boolean flag = false;

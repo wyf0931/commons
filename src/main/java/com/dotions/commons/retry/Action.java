@@ -5,7 +5,7 @@ package com.dotions.commons.retry;
  * @author wangyunfei 2016-10-25
  * @version 1.0
  */
-public interface RetryAction {
+public interface Action {
     
     /**
      * Action Name.

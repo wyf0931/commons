@@ -39,6 +39,10 @@ public class CacheBlock<K, V> {
         cleaner.monitor(this);
     }
     
+    public boolean containsKey(K key) {
+        return cache.containsKey(key);
+    }
+    
     /**
      * Default expire time is never.
      * */
